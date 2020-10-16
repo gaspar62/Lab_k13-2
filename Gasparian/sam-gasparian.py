@@ -30,7 +30,6 @@ print(f"координати: {x}; {y}; {z}")
 
 """
    Задача для самостійної номер 6
-   Даны три числа. Написать "yes", если можно взять какие-то два из них и в сумме получить третье
 """
 
 a = float(input("a: "))
@@ -45,3 +44,22 @@ elif float(b + c == a):
     print("yes")
 else:
     print("no")
+      
+"""номер 7"""
+
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
+d = float(input("d: "))
+
+if float(a > b and a > c and a > d and a % 2 == 0):
+    print(f"a:{a}")
+elif float(b > a and b > c and b > d and b % 2 == 0):
+    print(f"b:{b}")
+elif float(c > a and c > b and c > d and c % 2 == 0):
+    print(f"c:{c}")
+elif float(d > a and d > b and d > c and d % 2 == 0):
+    print(f"d:{d}")
+else:
+    print("not found")
+
