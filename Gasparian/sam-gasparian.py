@@ -15,7 +15,7 @@ c = float(input("третя сторона: "))
 
 if float(a + b < c):
     print("трикутника не існує")
-elif float(a + c < c):
+elif float(a + c < b):
     print("трикутника не існує")
 elif float(b + c < a):
     print("трикутника не існує")
@@ -27,3 +27,21 @@ x = float(input("x: "))
 y = float(input("y: "))
 z = float(input("z: "))
 print(f"координати: {x}; {y}; {z}")
+
+"""
+   Задача для самостійної номер 6
+   Даны три числа. Написать "yes", если можно взять какие-то два из них и в сумме получить третье
+"""
+
+a = float(input("a: "))
+b = float(input("b: "))
+c = float(input("c: "))
+
+if float(a + b == c):
+    print("yes")
+elif float(a + c == b):
+    print("yes")
+elif float(b + c == a):
+    print("yes")
+else:
+    print("no")
