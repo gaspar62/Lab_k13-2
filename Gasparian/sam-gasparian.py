@@ -2,7 +2,7 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+from math import cos
 """
    3.Написати програму, яка за довжинами сторін трикутника обчислює його периметр. Вхідні значення вважати коректними.
    4.Написати програму, яка запитує в користувача координати точки дійсної площини, а потім виводить отриману точку. 
@@ -62,4 +62,12 @@ elif float(d > a and d > b and d > c and d % 2 == 0):
     print(f"d:{d}")
 else:
     print("not found")
+      
+"""9"""
 
+s = 0
+i = 3
+while i < 113:
+    s += cos(i/(i+2))
+    i += 2
+print(s)
